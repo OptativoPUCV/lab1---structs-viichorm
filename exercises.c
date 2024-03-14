@@ -10,19 +10,15 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y devuelva el valor más grande del arreglo.
 */
 int findMax(int arr[], int size) {
-
   int max = arr[0];
-
   for (int i = 1; i < size; i++) {
-
 
     if (arr[i] > max){
       max = arr[i];
-
     }
- 
   }
-  return max; }
+  return max; 
+}
 
 /*
 Ejercicio 2: Invertir un Arreglo
@@ -33,24 +29,16 @@ invierta el orden de sus elementos.
 
 void reverseArray(int arr[], int size) {
   int start = 0;
-
   int end = size - 1;
-
+  
   while (start < end){
-
-
-
 
     int temp = arr[start];
     arr[start] = arr[end];
-
     arr[end] = temp;
-
     start++;
     end--;
   }
-
-  
 }
 
 /*
@@ -61,12 +49,13 @@ los números pares del arreglo original.
 newsize apunta a una dirección válida que no ha sido inicializada con nigún valor específico. 
 *newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
 */
+
+
+
 int *filterEvenNumbers(int arr[], int size, int *newSize) { 
   
   int count = 0;
   for (int i = 0; i < size; i++){
-
-
     if (arr[i] % 2 == 0){
       count++;
     }
@@ -77,7 +66,6 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
 
 
   for (int i = 0; i < size; i++){
-
     if (arr[i] % 2 == 0){
       evenArr[j] = arr[i];
       j++;
@@ -85,7 +73,6 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
   }
 
   *newSize = count;
-
   return evenArr;
 }
 
