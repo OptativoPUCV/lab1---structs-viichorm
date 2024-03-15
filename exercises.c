@@ -103,7 +103,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
 
   while (i < size1){
 
-    result[k] = arr1[i];
+    result[k] = arr2[j];
 
     j++;
     k++;
